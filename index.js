@@ -18,7 +18,10 @@ function basicState(){
 
 buttonEl.addEventListener("click", function(){
     baseValue = unitEl.value
-    lengthEl.textContent = `
+    if (baseValue === "") {
+        basicState()
+    } else {
+        lengthEl.textContent = `
         ${baseValue} meters = ${(baseValue * metersToFeet).toFixed(3)} feet 
         | ${baseValue} feet = ${(baseValue / metersToFeet).toFixed(3)} meters
     `
@@ -30,6 +33,7 @@ buttonEl.addEventListener("click", function(){
         ${baseValue} kilograms = ${(baseValue * kilogramsToPounds).toFixed(3)} pounds 
         | ${baseValue} pounds = ${(baseValue / kilogramsToPounds).toFixed(3)} kilograms
     `
+    }
 })
 
 unitEl.addEventListener("click", function(){
