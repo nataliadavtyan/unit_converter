@@ -8,10 +8,13 @@ let massEl = document.getElementById("mass-el")
 const metersToFeet = 3.281
 const kilogramsToPounds = 2.204
 
-lengthEl.textContent = "0 meters = 0 feet | 0 feet = 0 meters"
-temperatureEl.textContent = "0 °C = 32 °F | 0 °F = -17.8 °C"
-massEl.textContent = "0 kilograms = 0 pounds | 0 pounds = 0 kilograms"
+basicState()
 
+function basicState(){
+    lengthEl.textContent = "0 meters = 0 feet | 0 feet = 0 meters"
+    temperatureEl.textContent = "0 °C = 32 °F | 0 °F = -17.8 °C"
+    massEl.textContent = "0 kilograms = 0 pounds | 0 pounds = 0 kilograms"
+}
 
 buttonEl.addEventListener("click", function(){
     baseValue = unitEl.value
@@ -31,7 +34,5 @@ buttonEl.addEventListener("click", function(){
 
 unitEl.addEventListener("click", function(){
     unitEl.value = ""
-    lengthEl.textContent = "0 meters = 0 feet | 0 feet = 0 meters"
-    temperatureEl.textContent = "0 °C = 32 °F | 0 °F = -17.8 °C"
-    massEl.textContent = "0 kilograms = 0 pounds | 0 pounds = 0 kilograms"
+    basicState()
 })
