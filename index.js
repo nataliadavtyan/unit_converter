@@ -1,9 +1,8 @@
-let unitEl = document.getElementById("unit-el")
+const unitEl = document.getElementById("unit-el")
 const buttonEl = document.getElementById("button-el")
-let lengthEl = document.getElementById("length-el")
-let temperatureEl = document.getElementById("temperature-el")
-let massEl = document.getElementById("mass-el")
-
+const lengthEl = document.getElementById("length-el")
+const temperatureEl = document.getElementById("temperature-el")
+const massEl = document.getElementById("mass-el")
 
 const metersToFeet = 3.281
 const kilogramsToPounds = 2.204
@@ -18,9 +17,7 @@ function basicState(){
 
 buttonEl.addEventListener("click", function(){
     baseValue = unitEl.value
-    if (baseValue === "") {
-        basicState()
-    } else {
+    if (baseValue) {
         lengthEl.textContent = `
         ${baseValue} meters = ${(baseValue * metersToFeet).toFixed(3)} feet 
         | ${baseValue} feet = ${(baseValue / metersToFeet).toFixed(3)} meters
