@@ -28,7 +28,7 @@ function render(value){
 }
 
 buttonEl.addEventListener("click", function(){
-    let baseValue = unitEl.value
+    const baseValue = unitEl.value
     render(baseValue)
 })
 
