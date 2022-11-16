@@ -16,7 +16,7 @@ function basicState(){
 }
 
 buttonEl.addEventListener("click", function(){
-    baseValue = unitEl.value
+    let baseValue = unitEl.value
     if (baseValue) {
         lengthEl.textContent = `
         ${baseValue} meters = ${(baseValue * metersToFeet).toFixed(3)} feet 
