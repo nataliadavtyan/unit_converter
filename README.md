@@ -1,13 +1,30 @@
-# cod5444eeb1af36c9f95752b8
+# Unit converter
 
-## About Scrimba
+Metric / Imperial Unit Conversion.
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Frontend Developer Career Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+## Features
+Users enter the number, press the button and that number is being converted. Available conversions are: length (meters / feet), temperature (Celsius / Fahrenheit) and mass (kilograms / pounds). When the input field is clicked, the value is being reset and users can make a new conversion.
 
-- [Our courses](https://scrimba.com/allcourses)
-- [The Frontend Career Path](https://scrimba.com/learn/frontend)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+## Demo
+![The demonstration](./unit-converter.gif)
 
-Happy Coding!
+Test it on Netlify: https://gregarious-empanada-6e479b.netlify.app/
+
+## Technologies
+The project is built using:
+* HTML
+* CSS
+* JavaScript
+
+## Technical details
+* Used the same function for conversion and for rendering the initial value, which is 0.
+* Followed the design file on Figma.
+
+## Project status
+The project is complete.
+
+## Acknowledgements
+Unit converter is a solo project that was part of [the Frontend Developer Career Path at Scrimba](https://scrimba.com/learn/frontend).
+
+## Contact
+Created by [Natalia Davtyan](https://github.com/nataliadavtyan)
