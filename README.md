@@ -8,7 +8,7 @@ Users enter the number, press the button and that number is being converted. Ava
 ## Demo
 ![The demonstration](./unit-converter.gif)
 
-Test it on Netlify: https://gregarious-empanada-6e479b.netlify.app/
+Test it on Netlify: https://unit-converter-natalia-davtyan.netlify.app/
 
 ## Technologies
 The project is built using:
